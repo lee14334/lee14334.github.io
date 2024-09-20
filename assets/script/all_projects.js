@@ -118,7 +118,7 @@ const projects = [
     }
     
 
-}*/
+}
 
 // Event listener for the "Load More" button
-document.getElementById('load-more').addEventListener('click', allProjects);
+document.getElementById('load-more').addEventListener('click', allProjects);*/
