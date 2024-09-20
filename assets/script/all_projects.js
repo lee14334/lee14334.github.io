@@ -4,30 +4,24 @@ const projects = [
       title: "Perforyou",
       description: "A perfume recommendation system using an Item2Vec model.",
       image: "/assets/img/perfume.jpg",
-      accomplishments: [
-        "Collected 4 original raw datasets consisting of item and user data by data-scraping 2 websites.",
-        "Trained the Item2Vec model on dataset and achieved a Recall@20 that exceeded the other attempted models by 11.5%."
-      ],
+      line1:"Collected 4 original raw datasets consisting of item and user data by data-scraping 2 websites.",
+      line2:"Trained the Item2Vec model on dataset and achieved a Recall@20 that exceeded the other attempted models by 11.5%.",
       githubLink: "https://github.com/lee14334/"
     },
     {
       title: "Pitch Predictor",
       description: "An ensemble ANN+RNN model that predicts the incoming pitch of a baseball player.",
       image: "/assets/img/baseball.jpg",
-      accomplishments: [
-        "Coded and tested multiple neural network architectures including ANNs and RNNs.",
-        "Developed the final model and tuned the hyperparameters, increasing predictive accuracy by 44%."
-      ],
+      line1:"Coded and tested multiple neural network architectures including ANNs and RNNs.",
+      line2:"Developed the final model and tuned the hyperparameters, increasing predictive accuracy by 44%.",
       githubLink: "https://github.com/lee14334/"
     },
     {
       title: "Liver Disease Detector",
       description: "A liver disease detector using machine learning models.",
       image: "/assets/img/liver.jpg",
-      accomplishments: [
-        "Conducted data augmentation on ultrasound liver images using translations, rotations, Gaussian noise, etc.",
-        "Trained and tested an SVM and CNN as well as fine-tuned pre-trained deep learning models."
-      ],
+      line1:"Conducted data augmentation on ultrasound liver images using translations, rotations, Gaussian noise, etc.",
+      line2:"Trained and tested an SVM and CNN as well as fine-tuned pre-trained deep learning models.",
       githubLink: "https://github.com/lee14334/"
     }
   ];
@@ -56,7 +50,8 @@ const projects = [
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li> ${mostRecent.accomplishments.map(accomplishment => `<li>${accomplishment}</li>`).join('')}</li>
+                  <li> ${mostRecent.line1}</li>
+                  <li> ${mostRecent.line2}</li>
                 </ul>
                 <div class="card-action">
                   <a aria-label="Visit the GitHub repo for  project" href="${mostRecent.githubLink}"
