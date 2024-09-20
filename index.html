@@ -151,7 +151,7 @@
         <!-- <a aria-label="Open Si Yeun's resume in a new tab" href="#resume" target="_blank"
           onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Si Yeun's resume in a new tab" href="https://varadbhogayata.github.io/assets/resume/resume_444.pdf" target="_blank"
+        <a aria-label="Open Si Yeun's resume in a new tab" href="/assets/resume/resume_444.pdf" target="_blank"
         class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
       </li>
     </ul>
@@ -392,109 +392,10 @@
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
-          <!-- VQA -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/perfume.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Perforyou<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A perfume recommedation system using an Item2Vec model.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Collected 4 original raw datasets consisting of item and user data by data-scraping 2 websites.</li>
-                  <li>Trained the Item2Vec model on dataset and achieved a Recall@20 that exceeded the other attempted models by 11.5%.</li>
-
-                </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/lee14334/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
+          <div id="project-container">
           </div>
-
-          <!-- Video Summarizer -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/baseball.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Pitch Predictior<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  An ensemble ANN+RNN model that predicts the incoming pitch of a baseball player.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Coded and tested multiple neural network architectures including ANNs and RNNs.</li>
-                  <li>Developed the final model and tuned the hyperparameters, increasing predictive accuracy by 44%.</li>
-
-                </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/lee14334/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Image Generator -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/liver.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Liver Disease Detector<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A liver disease detector using machine learning models.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Conducted data augmentation on ultrasound liver images using translations, rotations, Gaussian noise, etc...</li>
-                  <li>Trained and tested an SVM and CNN as wel as finetuned pre-trained deep machine learning models.</li>
-
-                </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/lee14334/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ************* -->
         </div>
+        <button id="load-more" class="readme">Load More</button>
       </div>
     </section>
 
@@ -668,11 +569,11 @@
               target="_blank">http://github.com/lee14334</a></a>
         </p>
         <p>
-          <a aria-label="View Si Yeun on LinkedIn" href="www.linkedin.com/in/lsiyeun" target="_blank"
+          <a aria-label="View Si Yeun on LinkedIn" href="http://linkedin.com/lsiyeun" target="_blank"
             data-position="top" data-tooltip="View Si Yeun on LinkedIn"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Si Yeun on LinkedIn" href="www.linkedin.com/in/lsiyeun"
-              class="hoverline" target="_blank">www.linkedin.com/in/lsiyeun</a></a>
+              class="fa fa-linkedin"></i><a aria-label="Si Yeun on LinkedIn" href="http://linkedin.com/lsiyeun"
+              class="hoverline" target="_blank">http://linkedin.com/lsiyeun</a></a>
         </p>
       </div>
     </section>
@@ -707,6 +608,8 @@
       })
     })
   </script>
+
+<script src="/assets/script/all_projects.js"></script> 
 </body>
 
 </html>
