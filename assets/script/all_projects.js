@@ -92,7 +92,8 @@ const projects = [
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li> ${project.accomplishments.map(accomplishment => `<li>${accomplishment}</li>`).join('')}</li>
+                  <li> ${mostRecent.line1}</li>
+                  <li> ${mostRecent.line2}</li>
                 </ul>
                 <div class="card-action">
                   <a aria-label="Visit the GitHub repo for  project" href="${project.githubLink}"
