@@ -72,16 +72,15 @@ const projects = [
 
   // Load the first project when the page loads
   window.onload = loadProject();
-  displayedProject = 1;
 
   // Function to load remaining projects
   function allProjects() {
     const projectContainer = document.getElementById('project-container');
 
-    for (let i = displayedProject; i < projects.length; i++){
+    for (let i = 1; i < projects.length; i++){
         const project = projects[i]
 
-        projectContainer.innerHTML = 
+        projectContainer.innerHTML += 
         <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
