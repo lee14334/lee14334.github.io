@@ -67,7 +67,7 @@ const projects = [
               </div>
             </div>
           </div>
-          ;
+          
   }
 
   // Load the first project when the page loads
