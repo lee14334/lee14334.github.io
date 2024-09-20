@@ -72,7 +72,7 @@ const projects = [
 
   // Load the first project when the page loads
   window.onload = loadProject();
-
+/*
   // Function to load remaining projects
   function allProjects() {
     const projectContainer = document.getElementById('project-container');
@@ -118,7 +118,7 @@ const projects = [
     }
     
 
-}
+}*/
 
 // Event listener for the "Load More" button
 document.getElementById('load-more').addEventListener('click', allProjects);
