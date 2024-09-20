@@ -67,7 +67,7 @@ const projects = [
 
   // Load the first project when the page loads
   window.onload = loadProject;
-  const displayedProjects = 1;
+  let displayedProjects = 1;
 
   // Function to load remaining projects
   function allProjects() {
