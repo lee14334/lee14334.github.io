@@ -66,7 +66,8 @@ const projects = [
   }
 
   // Load the first project when the page loads
-  window.onload = loadProject();
+  window.onload = loadProject;
+  const displayedProjects = 1;
 
   // Function to load remaining projects
   function allProjects() {
@@ -74,6 +75,7 @@ const projects = [
 
     for (let i = 1; i < projects.length; i++){
         const project = projects[i]
+        displayedProjects++;
 
         projectContainer.innerHTML += `
         <div class="col s12 m6 l4">
@@ -92,8 +94,8 @@ const projects = [
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li> ${mostRecent.line1}</li>
-                  <li> ${mostRecent.line2}</li>
+                  <li> ${project.line1}</li>
+                  <li> ${project.line2}</li>
                 </ul>
                 <div class="card-action">
                   <a aria-label="Visit the GitHub repo for  project" href="${project.githubLink}"
