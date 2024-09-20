@@ -67,7 +67,7 @@ const projects = [
 
   // Load the first project when the page loads
   window.onload = loadProject();
-/*
+
   // Function to load remaining projects
   function allProjects() {
     const projectContainer = document.getElementById('project-container');
@@ -75,7 +75,7 @@ const projects = [
     for (let i = 1; i < projects.length; i++){
         const project = projects[i]
 
-        projectContainer.innerHTML += 
+        projectContainer.innerHTML += `
         <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -102,7 +102,7 @@ const projects = [
                 </div>
               </div>
             </div>
-          </div>
+          </div>`
           ;
     }
 
@@ -116,4 +116,4 @@ const projects = [
 }
 
 // Event listener for the "Load More" button
-document.getElementById('load-more').addEventListener('click', allProjects);*/
+document.getElementById('load-more').addEventListener('click', allProjects);
