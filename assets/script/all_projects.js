@@ -33,7 +33,7 @@ const projects = [
     const projectContainer = document.getElementById('project-container');
     const mostRecent = projects[0];
 
-    projectContainer.innerHTML = 
+    projectContainer.innerHTML = `
         <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -61,7 +61,7 @@ const projects = [
                 </div>
               </div>
             </div>
-          </div>
+          </div>`
           
   }
 
